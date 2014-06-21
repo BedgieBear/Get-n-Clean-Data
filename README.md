@@ -12,7 +12,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
-For each record it is provided:
+For each record (observation), the following is provided:
 ======================================
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -24,7 +24,7 @@ For each record it is provided:
 The dataset includes the following files:
 =========================================
 
-- train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'train/subject_train.txt' & 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 - 'features_info.txt': Shows information about the variables used on the feature vector.
 
@@ -43,7 +43,11 @@ The dataset includes the following files:
 Notes: 
 ======
 - The file run_analysis.R in the main directory can be run as long as the Samsung data is in your working directory. 
-- The output should be a tidy data set giving the mean  for all observations associated with a subject/activity pair. 
+- run_analysis collects, consolidates and cleans the data by performing the following:
+-   1) reading the test and training subject files (subject_train.txt & /subject_test.txt) and combining them into one column with a header.
+-   2a) reading the activity_labels.txt file, and cleaning up the activity description text 
+-   2b) reading the test and training y files (y_train.txt & y.test.txt), combining them into one column, creating a vector of activity descriptions that correspond to the activity codes in the y files, and combining the train and test activity descriptions into 1 column with a header.
+- The output should be a tidy data set giving the mean for all observations associated with a subject/activity pair. 
 
 - For more information about this dataset contact: activityrecognition@smartlab.ws
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
