@@ -45,9 +45,14 @@ Notes:
 - The file run_analysis.R in the main directory can be run as long as the Samsung data is in your working directory. 
 - run_analysis collects, consolidates and cleans the data by performing the following:
 -   1) reading the test and training subject files (subject_train.txt & /subject_test.txt) and combining them into one column with a header.
--   2a) reading the activity_labels.txt file, and cleaning up the activity description text 
+-   2a) reading the activity_labels.txt file, and cleaning up the activity description text. 
 -   2b) reading the test and training y files (y_train.txt & y.test.txt), combining them into one column, creating a vector of activity descriptions that correspond to the activity codes in the y files, and combining the train and test activity descriptions into 1 column with a header.
-- The output should be a tidy data set giving the mean for all observations associated with a subject/activity pair. 
+-   3a) reading the features.txt file, extracting only the measurement headings on the mean and standard deviation for each observation, and cleaning up the measurement headings.
+-   3b) reading the test and training X files (X_train.txt & X_test.txt), extracting only the measurements on the mean and standard deviation for each observation, and combining the train and test measurement data into a data frame with the headings created in 3a.
+-   4) combining the subject data, activity data and measurement data into one data frame.
+-   5) summarizing the data, such that the averages of all mean and standard deviation measurements for each unique subject/activity pair is provided in a tidy data frame. 
+-   6) creating a text file, 'tidy_move_data.txt', from the tidy data frame.
+- The output, 'tidy_move_data.txt', is a tidy data set giving the mean for all observations associated with a subject/activity pair. 
 
 - For more information about this dataset contact: activityrecognition@smartlab.ws
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
