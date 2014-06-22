@@ -98,18 +98,20 @@ Output Averages Dataset (tidy_move_data.txt) Fields
 -activity: Description on the activity measured. Values are walking, walking upstairs, walking downstairs, sitting, standing, laying.    
 
 The following 66 fields are the averages of all measurements for each subject/activity pair. The names consist of a number of parts, which identify the type of measurement.     
-	* avg:  avg of all readings of this type for this subject/activity pair  
-        * freq:    frequency  
-        * time:    time  
-	* body:    body  
-	* gravity: gravity  
-        * gyro:    gyroscope   
-        * jerk:    jerk  
-        * std:     standard deviation  
-        * mean:    mean/average  
-        * acc:     acceleration  
-        * mag:     signal magnitude  
-        * x, y, z: 3-axial signals in the x, y and z directions  
+	- avg:  avg of all readings of this type for this subject/activity pair  
+        - freq:    frequency  
+        - time:    time  
+	- body:    body  
+	- gravity: gravity  
+        - gyro:    gyroscope   
+        - jerk:    jerk  
+        - std:     standard deviation  
+        - mean:    mean/average  
+        - acc:     acceleration  
+        - mag:     signal magnitude  
+        - x, y, z: 3-axial signals in the x, y and z directions  
+
+
 -avgtimebodyaccmeanx  
 -avgtimebodyaccmeany  
 -avgtimebodyaccmeanz 
