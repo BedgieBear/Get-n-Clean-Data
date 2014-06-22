@@ -52,7 +52,7 @@ Notes:
 -   4) combining the subject data, activity data and measurement data into one data frame.
 -   5) summarizing the data, such that the averages of all mean and standard deviation measurements for each unique subject/activity pair is provided in a tidy data frame. 
 -   6) creating a text file, 'tidy_move_data.txt', from the tidy data frame.
-- The output, 'tidy_move_data.txt', is a tidy data set giving the mean for all observations associated with a subject/activity pair. 
+- The output, 'tidy_move_data.txt', is a tidy data set giving the mean for all observations associated with a subject/activity pair. Here is a statement that will read the file:  xfiles <- read.table("tidy_move_data.txt", sep="\t"). 
 
 - For more information about this dataset contact: activityrecognition@smartlab.ws
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
